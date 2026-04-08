@@ -9,3 +9,6 @@ tmp/
 temp/
 mlruns/
 creditcard.csv
+
+creditcard.csv
+venv/

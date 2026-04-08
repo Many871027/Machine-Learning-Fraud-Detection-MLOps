@@ -42,5 +42,9 @@ def get_model_configs(ratio_neg_pos=1.0):
             'param_grid': {
                 'resampler': [SMOTE(random_state=42)]
             }
+        },
+        'XGBoost_Production_Nativo': {
+            'estimator': XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42),
+            'param_grid': {}
         }
     }
