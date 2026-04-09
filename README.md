@@ -53,7 +53,7 @@ python -m src.model_pipeline
 ```
 >  *Generará los binarios empaquetados (`model/` estructurado por mlflow) y (`scaler.pkl`) en la carpeta productiva `artifacts/`.*
 
-## 📡 Despliegue en Nube y Servidor API Restful
+##  Despliegue en Nube y Servidor API Restful
 
 Tras la compilación exitosa, levanta la compuerta de backend para poder recibir los Puntos Flotantes del servidor:
 ```bash
