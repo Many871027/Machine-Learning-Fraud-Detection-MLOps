@@ -13,10 +13,12 @@
 
 ---
 
-## 1. Introducción
-El análisis forense y predictivo de transacciones fraudulentas constituye uno de los desafíos computacionales más hostiles en el modelado de clasificación binaria bajo aprendizaje supervisado. En el ecosistema financiero, la detección estocástica algorítmica impacta directamente la asimetría entre las pérdidas por contracargos y la experiencia del usuario final (falsos positivos/declinación de pagos lícitos).
+## 1. Introducción y Objetivo General
+El análisis forense y predictivo de transacciones fraudulentas constituye uno de los desafíos computacionales más hostiles en el modelado de clasificación binaria bajo aprendizaje supervisado. En el ecosistema financiero, la detección estocástica algorítmica impacta directamente la asimetría entre las pérdidas por contracargos y la experiencia del usuario final (falsos positivos contra la declinación de pagos lícitos).
 
-En este proyecto, se diseña una arquitectura MLOps integral para procesar el denso espacio vectorial de *Credit Card Fraud*. A diferencia de conjuntos tradicionales, el contexto del fraude conlleva un hiper-desbalance estructural de clases (0.17% positivos). La maximización de la capacidad de generalización algorítmica exigió podar estimadores paramétricos de costo exponencial (SVM, KNN) y transicionar estrictamente a ecosistemas de ensamble (*Gradient Boosting, Random Forest*).
+Para materializar la arquitectura, anclamos el desarrollo sobre el *Credit Card Fraud Dataset* masivo (284,807 transacciones europeas). Este bloque cuenta con una naturaleza técnica inmaculada: bajo rígidas normativas de protección de datos bancarios (PII), la identidad de cada tarjetahabiente fue erradicada previamente mediante una transformación matemática ortogonal de Análisis de Componentes Principales (PCA). Se nos entregó un lienzo hiperdimensional puramente numérico (compuesto de los vectores ocultos `V1` a `V28`, sumados al `Monto` y `Tiempo`). Al estar depurado de metadatos de texto asimétricos, el dataset está biológicamente listo para el desarrollo, permitiéndonos omitir lentos *LabelEncoders* e inyectar los tensores numéricos flotantes directo al modelo.
+
+En este proyecto, se orquesta una arquitectura MLOps integral que trasciende este análisis teórico para llevarlo a un despliegue operativo en servidor web API (*FastAPI*). Abordar el contexto real del fraude nos enfrentó a un hiper-desbalance estructural letal (apenas el 0.17% son estafas). La maximización de la capacidad inferencial en milisegundos y la prevención de Miedo a Memoria (Out Of Memory Error) exigió podar estimadores académicos de costo exponencial como SVM y KNN, transicionando empíricamente a la corona del ensamblaje iterativo: *XGBoost*. La tesis absoluta que engloba este reporte demostrará cómo desechar viejas heurísticas de sobre-muestreo sintético (SMOTE) para entrenar nativamente en el caos del desbalance es crucial para la seguridad financiera sin destruir a los usuarios legítimos.
 
 ---
 
