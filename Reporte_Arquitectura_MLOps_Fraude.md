@@ -64,8 +64,12 @@ La elección final transita inexorablemente al abandono de las lógicas SMOTE cr
 ---
 
 ## 6. Interpretabilidad de Variables (Feature Importance)
-La opacidad inherente tras el tamizado de Seguridad por Análisis de Componentes Principales (V1-V28) dificulta extraer nombres explícitos corporativos, pero consolida un modelo de caja de cristal matemática.
-- `Amount` (Monto Neto de la Transacción) y `Tiempo` emergen como discriminantes estocásticos. En montos exóticos asimétricamente altos a media noche, la densidad del vector predictivo sube abismalmente frente al control base de consumo ordinario.
+La opacidad inherente tras el tamizado de Seguridad por Análisis de Componentes Principales (V1-V28) dificulta extraer nombres explícitos corporativos, pero consolida un modelo de "caja de cristal" rigurosamente auditable.
+
+Contrario a la intuición de negocio convencional, el análisis Gini del **Top 10 Feature Importance** (*artifacts/feature_importance_XGBoost_Production.png*) desmintió categóricamente que variables lógicas como `Amount` o `Time` fuesen los predictores principales; de hecho, ni siquiera ingresaron al Top 10 computacional.
+- **La Hegemonía de V14:** El vector ortogonal `V14` es el soberano absoluto del algoritmo productivo, acaparando más del **80% del poder predictivo**. Este único componente latente dicta matemáticamente la frontera hiperplana para bloquear una tarjeta.
+- **Validación Secundaria (V7):** El vector `V7` actúa como el segundo y único refuerzo funcional con importancia superior al **10%**.
+- Esto demuestra que el Fraude Internacional sofisticado no se atrapa buscando "montos exorbitantes" a "deshoras", sino que XGBoost logró rastrear perturbaciones estructurales micro-transaccionales profundas (V14 y V7) invisibles para un analista humano.
 
 ---
 
